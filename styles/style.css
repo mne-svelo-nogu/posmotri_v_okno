@@ -45,14 +45,12 @@ ol {
   align-items: flex-end;
   justify-content: center;
   gap: 30px;
-  /* width: 100%; */
   margin: auto;
 }
 
 .search-form {
   display: flex;
   justify-content: space-between;
-  /* align-items: flex-start; */
   align-items: flex-end;
 }
 
@@ -114,9 +112,8 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  /* max-width: 194px; */
+  width: 194px;
   max-height: 103px;
-  width: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -129,7 +126,6 @@ ol {
 }
 
 .search-form__fieldset-title {
-  /* font-family: "Fira Sans Condensed", sans-serif; */
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
@@ -151,16 +147,15 @@ ol {
 .content__card-link {
   text-decoration: none;
   display: block;
+  color: #fff;
 }
 
 .content__video-card-description-container {
-  width: 100%;
   display: flex;
   flex-direction: column;
   font-weight: 400;
   line-height: 16.2px;
   padding: 0 0 4px 2px;
-  /* gap: 6px; */
 }
 
 .content__video-card-title {
@@ -168,13 +163,15 @@ ol {
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
-  color: #fff;
   text-transform: uppercase;
   padding: 2px 0 6px 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 200px;
 }
 
 .content__video-card-description {
-  /* font-family: 'Fira Sans Condensed', sans-serif; */
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
@@ -230,18 +227,6 @@ ol {
   border: 1px solid #fff;
 }
 
-/* .content__list::-webkit-scrollbar {
-  width: 0;
-}
-
-.content__list {
-  -ms-overflow-style: none;
-}
-
-.content__list {
-  overflow: -moz-scrollbars-none;
-} */
-
 input[type="checkbox"]:checked + span::after,
 input[type="checkbox"]:active + span::after {
   content: "";
@@ -267,8 +252,6 @@ input[type="checkbox"]:active + span::after {
   font-family: inherit;
   font-size: 18px;
   color: #fff;
-  /* min-width: 34px; */
-  /* width: 194px; */
   padding: 6px 0;
 }
 
@@ -321,7 +304,6 @@ input[type="checkbox"]:active + span::after {
 
 .content__card-link_current {
   background-color: #545050;
-  /* display: block; */
 }
 
 .content__card-link:focus {
